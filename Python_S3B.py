@@ -1,12 +1,12 @@
 import boto3
 
 # З'єднання з Amazon S3
-aws_access_key_id = "AKIA6GBMBF6L4ZNVQBW4"
-aws_secret_access_key = "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"
+aws_access_key_id = "You access key"
+aws_secret_access_key = "You secret key"
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key, region_name='eu-north-1')
 
 # Створення нового відерка
-bucket_name = 'my-bucket-sasha-mankovsky-susk'
+bucket_name = 'You backet name'
 s3.create_bucket(Bucket=bucket_name, CreateBucketConfiguration={'LocationConstraint': 'eu-north-1'})
 
 # Виведення списку відер
